@@ -1,0 +1,124 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-size: 16px;
+}
+img{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+/**
+ *强制p换行 
+ */
+p{
+	word-wrap:break-word; 
+	word-break:normal;
+	line-height: 1.5em;
+}
+ul li{
+	list-style-type: none;
+}
+.show{display: block;}
+.hidden{display: hidden;}
+
+.introducePage{
+	background-color: #FAF8FF;
+	margin: 0 auto;
+	height: 1000px;
+	border: 1px solid #D2C8E6;
+	border-radius: 5px;
+}
+.introducePage .brief{
+	width: 100%;
+	margin-top: 20px;
+	overflow: auto;
+}
+.introducePage .brief .imgBrief{
+	width: 30%;
+	height: 200px;
+	margin-left: 5px;
+	float: left;
+}
+.introducePage .brief .fontBrief{
+	width: 60%;
+	float: left;
+	margin-left: 5%;
+}
+.intcoNav{
+	overflow: auto;
+}
+.intcoNav span{
+	float: right;	
+	margin:10px 5px;
+	cursor: pointer;
+	border: 2px outset #ccc;
+	border-radius: 3px;
+}
+.intcoNav span:nth-child(1){
+	margin-right: 10px;
+}
+.intcoNav span:active{
+	border: 2px inset #FAF8FF;
+}
+.introducePage hr{
+	width: 96%;
+	height: 3px;
+	background: #ccc;
+	border-radius: 3px;
+}
+.introducePage .intco{
+	width: 100%;
+}
+.intco .introduce{
+	background-color: #EDE9F5;
+}
+.introducePage .intco .introduce,.introducePage .intco .comment{
+	width: 100%;
+	overflow: auto;
+}
+.intco .introduce .userHead{
+	overflow: auto;
+}
+.intco .introduce .userHead img,.intco .introduce .userHead p{
+	float: left;
+	display: block;
+}
+.intco .introduce .userHead img{
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+.intco .introduce .userIntro{
+	margin-left: 50px;
+	width: 80%;
+}
+
+
+@media only screen and (min-width: 1000px) {
+	.introducePage{
+		width: 640px;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+	.introducePage{
+		width: 500px;
+	}
+	.introducePage .brief .imgBrief{
+		height: 200px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.introducePage{
+		width: 100%  ;
+	}
+	.introducePage .brief .imgBrief{
+		height: 200px;
+	}
+}	
+	
+	
+	
+
